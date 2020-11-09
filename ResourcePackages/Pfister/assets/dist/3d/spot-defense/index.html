@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>finish puck test</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				overflow: hidden;
+				background: transparent;
+			}
+
+			#engaging {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;ddetails
+				justify-content: center;
+				align-items: center;
+			}
+
+			#engaging #swatch, #engaging .text {
+				display:inline-block;
+				width:45%;
+				min-height: 350px;
+				min-width: 350px;
+			}
+			#engaging #swatch {
+				width: 100%;
+				margin:0 auto;
+			}
+
+		</style>
+	</head>
+	<body>
+		<script src="js/three.js"></script>
+
+		<script>
+
+			var container;
+			var camera, scene1, projector, renderer;
+			var mesh_puck, mesh_shadow;
+
+			var mouseX = 0;
+			var mouseY = 0;
+
+			var targetX = 0, targetY = 0;
+
+			var windowHalfX = window.innerWidth / 2;
+			var windowHalfY = window.innerHeight / 2;
+
+			var swatchHalfX = 400;
+			var swatchHalfY = 400;
+
+			loadImages();
+
+			function loadImages() {
+
+				puck_texture_dirty = new THREE.TextureLoader().load( 'textures/spot_defense_dirty.jpg' );
+				puck_bump = new THREE.TextureLoader().load( 'textures/spot_defense_bump.jpg' );
+				puck_roughness = new THREE.TextureLoader().load( 'textures/spot_defense_roughness.jpg' );
+
+				var puck_material_dirty = new THREE.MeshPhysicalMaterial( {
+					color: 0xffffff,
+					map: puck_texture_dirty,
+					bumpMap: puck_bump,
+					bumpScale: 0.015,
+					metalness: 0.0,
+					roughnessMap: puck_roughness,
+					clearCoat: 1.0,
+					clearCoatRoughness: 0.5,
+					reflectivity: 0.5
+					//reflectivityMap: puck_specular
+				} );
+
+				var loaderA = new THREE.JSONLoader();
+				var loaderB = new THREE.JSONLoader();
+
+				loaderA.load( "models/json/puck_01b.json", function( geometry ) {
+
+					//mesh_puck = new THREE.Mesh( geometry, puck_material_clean );
+					mesh_puck = new THREE.Mesh( geometry, puck_material_dirty );
+
+					init();
+
+				} );
+
+			};
+
+
+			function init() {
+
+				container = document.createElement( 'div' );
+				document.getElementById('swatch').appendChild( container );
+
+				camera = new THREE.PerspectiveCamera( 20, document.getElementById('swatch').clientWidth / document.getElementById('swatch').clientHeight, 1, 10000 );
+				camera.position.y = 100;
+				camera.target = new THREE.Vector3( 0, 0, 0 );
+				camera.lookAt( camera.target );
+
+
+				scene1 = new THREE.Scene();
+
+				scene1.add( mesh_puck );
+
+				scene1.add( new THREE.AmbientLight( 0x111111 ) );
+
+				var directionalLight_left = new THREE.DirectionalLight( 0xffffff, 0.6 );
+				directionalLight_left.position.set( -1, 1, 0 ).normalize();
+				scene1.add( directionalLight_left );
+
+				var directionalLight_right = new THREE.DirectionalLight( 0xffffff, 0.6 );
+				directionalLight_right.position.set( 1, 1, 0 ).normalize();
+				scene1.add( directionalLight_right );
+
+
+
+				renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+				renderer.setClearColor( 0xffffff, 0 );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( document.getElementById('swatch').clientWidth, document.getElementById('swatch').clientHeight, true );
+				renderer.autoClear = true;
+				container.appendChild(renderer.domElement);
+
+				swatchHalfX = document.getElementById('swatch').clientWidth / 2;
+				swatchHalfY = document.getElementById('swatch').clientHeight / 2;
+
+				document.getElementById('swatch').addEventListener( 'mousemove', onDocumentMouseMove, false );
+				document.getElementById('swatch').addEventListener( 'touchstart', onDocumentTouchStart, false );
+				document.getElementById('swatch').addEventListener( 'touchmove', onDocumentTouchMove, false );
+				window.addEventListener( 'resize', onWindowResize, false );
+
+				animate();
+
+			}
+
+
+
+			function onWindowResize() {
+				SCREEN_WIDTH = document.getElementById('swatch').clientWidth;
+				SCREEN_HEIGHT = document.getElementById('swatch').clientHeight;
+
+				camera.aspect = document.getElementById('swatch').clientWidth / document.getElementById('swatch').clientHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( document.getElementById('swatch').clientWidth, document.getElementById('swatch').clientHeight );
+
+				swatchHalfX = document.getElementById('swatch').clientWidth / 2;
+				swatchHalfY = document.getElementById('swatch').clientHeight / 2;
+
+			}
+
+
+			function onDocumentMouseMove( event ) {
+
+				var divTop = document.getElementById('swatch').getBoundingClientRect().top;
+				var divLeft = document.getElementById('swatch').getBoundingClientRect().left;
+
+				mouseX = ( (event.clientX - divLeft) - swatchHalfX ) * 4;
+				mouseY = ( (event.clientY - divTop) - swatchHalfY ) * 4;
+				//console.log(mouseX + ", " + mouseY);
+				//console.log(event.clientY);
+				//console.log(document.getElementById('swatch').getBoundingClientRect().top);
+				//console.log(window.scrollY);
+
+			}
+
+
+			function onDocumentTouchStart( event ) {
+
+				 if ( event.touches.length == 1 ) {
+
+					event.preventDefault();
+
+					mouseX = ( event.touches[ 0 ].pageX - swatchHalfX ) * 1;
+					mouseY = ( event.touches[ 0 ].pageY - swatchHalfY ) * 1;
+
+				}
+			}
+
+
+			function onDocumentTouchMove( event ) {
+
+				var divTop = document.getElementById('swatch').getBoundingClientRect().top + window.scrollY;
+				var divLeft = document.getElementById('swatch').getBoundingClientRect().left;
+
+				if ( event.touches.length == 1 ) {
+
+					event.preventDefault();
+					mouseX = ( (event.touches[ 0 ].pageX - divLeft) - swatchHalfX ) * 5;
+					mouseY = ( (event.touches[ 0 ].pageY - divTop) - swatchHalfY ) * 5;
+
+                }
+				//console.log(mouseX + ", " + mouseY);
+				//console.log(event.touches[ 0 ].pageY);
+				//console.log(document.getElementById('swatch').getBoundingClientRect().top);
+				//console.log(window.scrollY);
+				//console.log(swatchHalfY);
+
+			}
+
+			function animate() {
+				requestAnimationFrame( animate );
+				render();
+			}
+
+			function render() {
+
+				targetX = mouseX * -0.001;
+				targetY = mouseY *  0.001;
+
+				if ( targetX < -0.75 ) {
+					targetX = -0.75;
+				} else if ( targetX > 0.75 ) {
+					targetX = 0.75;
+				}
+
+				if ( targetY < -0.75 ) {
+					targetY = -0.75;
+				} else if ( targetY > 0.75 ) {
+					targetY = 0.75;
+				}
+
+				if ( mesh_puck ) {
+					mesh_puck.rotation.z += 0.05 * ( targetX - mesh_puck.rotation.z );
+					mesh_puck.rotation.x += 0.05 * ( targetY - mesh_puck.rotation.x );
+				}
+
+
+				if ( mesh_shadow ) {
+					mesh_shadow.rotation.z += 0.05 * ( targetX - mesh_shadow.rotation.z );
+					mesh_shadow.rotation.x += 0.05 * ( targetY - mesh_shadow.rotation.x );
+
+				}
+
+				renderer.clearDepth();
+				renderer.render( scene1, camera );
+
+			}
+
+		</script>
+
+		<div id="engaging">
+			<div id="swatch"></div>
+		</div>
+	</body>
+</html>
