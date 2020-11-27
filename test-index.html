@@ -39,10 +39,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="assets/js/wow.min.js"></script>
     <link href="/ResourcePackages/Pfister/assets/dist/css/app-version=20201022225729&package=Pfister.css" rel="stylesheet" type="text/css" />
-
+    <style>
+        .parallax {
+            /* The image used */
+            background-image: url("images/main-imgs/about-us.jpg");
+            /* Set a specific height */
+            min-height: 800px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .parallax2 {
+            /* The image used */
+            background-image: url("images/main-imgs/slide-4.png");
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .parallax3 {
+            /* The image used */
+            background-image: url("images/main-imgs/slide-1.png");
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .parallax4 {
+            /* The image used */
+            background-image: url("images/main-imgs/slide-3.png");
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .gallaries {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="parallax" style="text-align: center; padding-top: 20%;">
+        <img src="images/main-imgs/logo.jpg" alt="" srcset="">
+        <h1 style="color: white;">Experience the Modern Innovation</h1>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="images/main-imgs/logo.jpg" width="50%" alt="Pneutech Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,422 +154,158 @@
             </div>
         </div>
     </nav> -->
-    <div class="site-wrapper ">
-        <header class="site-header ">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2500">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 hero-image__bg" src="images/main-imgs/slide-5.png" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="wow animate__animated animate__bounceInDown">
+                        <div class="kicker kicker--box">Faucet Collection</div>
+                        <div>A faucet </br> for your interior </div>
+                    </h1>
+                </div>
 
-            <div class="site-header__inner ">
-                <div class="site-header__logo ">
-                    <a href="index.html " class="site-header__logo-link "> <img src="images/main-imgs/logo.jpg " width="300 " height="auto " alt="Pneutech Logo "> </a>
-                </div> <button class="site-header__nav-toggle js-main-nav-toggle "> <i class="icon-menu icon-left-sm "></i> <span class="site-header__nav-menu-label ">Menu</span> </button>
-
-                <nav class="site-header__nav site-nav js-site-nav ">
-
-                    <ul class="main-nav js-main-nav ">
-                        <li class="main-nav__item js-main-nav-item ">
-                            <div class="main-nav__trigger-wrapper ">
-                                <a href="index.html " target="_self " class="main-nav__trigger ">
-                Home
-                <!-- <span class="main-nav__mobile-trigger js-sub-nav-mobile-trigger "></span> -->
-            </a>
-                                <a href="index.html# " class="main-nav__tap-close js-sub-nav-close ">
-                                    <i class="icon-close "></i> Close
-                                </a>
-                            </div>
-                            <nav class="sub-nav sub-nav--major js-sub-nav ">
-
-
-
-                                <div id="TopRow_C011_Col00 " class="sf_colsIn container-wide " data-sf-element="Row " data-placeholder-label="container-wide ">
-
-
-
-                                </div>
-                                <div id="TopRow_C009_Col00 " class="sf_colsIn sub-nav__panel sub-nav__panel--full " data-sf-element="Sub-Nav Panel (Full) " data-placeholder-label="Sub-Nav Panel (Full) ">
-                                </div>
-
-
-
-                                <div class="row ">
-
-                                </div>
-                            </nav>
-                        </li>
-                        <li class="main-nav__item js-main-nav-item ">
-                            <div class="main-nav__trigger-wrapper ">
-                                <a href="about-us.html " target="_self " class="main-nav__trigger ">
-                About Us
-                <!-- <span class="main-nav__mobile-trigger js-sub-nav-mobile-trigger "></span> -->
-                                </a>
-                                <a href="index.html# " class="main-nav__tap-close js-sub-nav-close ">
-                                    <i class="icon-close "></i> Close
-                                </a>
-                            </div>
-                            <nav class="sub-nav sub-nav--major js-sub-nav ">
-
-
-
-
-
-
-                                <div id="BottomRow_C018_Col00 " class="sf_colsIn container-wide " data-sf-element="Row " data-placeholder-label="container-wide ">
-
-
-                                    <div>
-
-
-                                    </div>
-                                </div>
-                                <div id="BottomRow_C015_Col00 " class="sf_colsIn sub-nav__panel sub-nav__panel--full " data-sf-element="Sub-Nav Panel (Full) " data-placeholder-label="Sub-Nav Panel (Full) ">
-                                </div>
-                                <div class="row ">
-                                </div>
-                            </nav>
-                        </li>
-
-                        <li class="main-nav__item js-main-nav-item ">
-                            <div class="main-nav__trigger-wrapper ">
-                                <a href="our-products.html " target="_self " class="main-nav__trigger ">
-                View All Products
-                                    <!-- <span class="main-nav__mobile-trigger js-sub-nav-mobile-trigger "></span> -->
-            </a>
-                                <a href="index.html# " class="main-nav__tap-close js-sub-nav-close ">
-                                    <i class="icon-close "></i> Close
-                                </a>
-                            </div>
-                            <nav class="sub-nav sub-nav--major js-sub-nav ">
-                                <div id="TopRow_C001_Col00 " class="sf_colsIn sub-nav__inner " data-sf-element="Sub-Nav Container " data-placeholder-label="Sub-Nav Container ">
-                                    <div id="TopRow_C002_Col00 " class="sf_colsIn sub-nav__panel sub-nav__panel--half " data-sf-element="Sub-Nav Panel (Half) " data-placeholder-label="Sub-Nav Panel (Half) ">
-
-
-
-
-
-
-                                    </div>
-
-
-
-                                    <div id="TopRow_C003_Col00 " class="sf_colsIn sub-nav__panel sub-nav__panel--narrow sub-nav__panel--extra-padded " data-sf-element="Sub-Nav Panel (Narrow) " data-placeholder-label="Sub-Nav Panel (Narrow) ">
-                                    </div>
-                                </div>
-
-
-                                <div class="row ">
-                                </div>
-                            </nav>
-                        </li>
-
-                        <li class="main-nav__item js-main-nav-item ">
-                            <div class="main-nav__trigger-wrapper ">
-                                <a href="catalogue.html " target="_self " class="main-nav__trigger ">
-                                    Catalogue
-                <!-- <span class="main-nav__mobile-trigger js-sub-nav-mobile-trigger "></span> -->
-            </a>
-                                <a href="index.html# " class="main-nav__tap-close js-sub-nav-close ">
-                                    <i class="icon-close "></i> Close
-                                </a>
-                            </div>
-                            <nav class="sub-nav sub-nav--major js-sub-nav ">
-
-
-
-
-
-                                <div id="BottomRow_C018_Col00 " class="sf_colsIn container-wide " data-sf-element="Row " data-placeholder-label="container-wide ">
-
-
-                                    <div>
-
-
-                                    </div>
-                                </div>
-                                <div id="BottomRow_C015_Col00 " class="sf_colsIn sub-nav__panel sub-nav__panel--full " data-sf-element="Sub-Nav Panel (Full) " data-placeholder-label="Sub-Nav Panel (Full) ">
-                                </div>
-                                <div class="row ">
-                                </div>
-                            </nav>
-                        </li>
-                        <li class="main-nav__item js-main-nav-item ">
-
-                            <div class="main-nav__trigger-wrapper ">
-                                <a href="contact-us.html " target="_self " class="main-nav__trigger ">
-                                                            Contact Us
-                <!-- <span class="main-nav__mobile-trigger js-sub-nav-mobile-trigger "></span> -->
-            </a>
-                                <a href="index.html# " class="main-nav__tap-close js-sub-nav-close ">
-                                    <i class="icon-close "></i> Close
-                                </a>
-                            </div>
-                            <nav class="sub-nav sub-nav--major js-sub-nav ">
-                                <div id="TopRow_C011_Col00 " class="sf_colsIn sub-nav__inner " data-sf-element="Sub-Nav Container " data-placeholder-label="Sub-Nav Container ">
-                                    <div id="TopRow_C014_Col00 " class="sf_colsIn sub-nav__panel sub-nav__panel--half " data-sf-element="Sub-Nav Panel (Half) " data-placeholder-label="Sub-Nav Panel (Half) ">
-                                        <div>
-                                            <div>
-
-                                            </div>
-
-
-
-                                        </div>
-                                        <div id="TopRow_C006_Col00 " class="sf_colsIn sub-nav__panel sub-nav__panel--half " data-sf-element="Sub-Nav Panel (Half) " data-placeholder-label="Sub-Nav Panel (Half) ">
-
-
-
-
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="row ">
-                                    </div>
-                            </nav>
-                        </li>
-
-
-                    </ul>
-                    <ul class="list-inline footer-subnav__social ">
-                        <li><a class="link-reversed-subtle " href="# " target="_blank "><em class="icon-facebook "></em><span class="sr-only ">Facebook</span></a></li>
-                        <li><a class="link-reversed-subtle " href="# " target="_blank "><em class="icon-twitter "></em><span class="sr-only ">Twitter</span></a></li>
-                        <li><a class="link-reversed-subtle " href="# " target="_blank "><em class="icon-instagram "></em><span class="sr-only ">Instagram</span></a>
-                        </li>
-                    </ul>
-
-
-
-                    </div>
-        </header>
-        <div class="site-main ">
-            <script src="ScriptResource-d=4bMApOb58R6igmkUEZ0eXiNxmd1Q3H0_nTxBwPBckYKvxUoguWHFPJ45ujkNUTSfsDY2p5UF5kFAHg_0UZyp2w__XgPjdmX32hTSoJCuCLyoRu4ONGMG8g9O7vYghlvcXF4NlSK7rq4BhEamAVdKHCn5B8s5DH-EXKyKAY882OaZ7p4qy6-Iyc3T8ggMmdyi0&t=4d25b666.axd
-                    " type="text/javascript "></script>
-            <script src="ScriptResource-d=EydukmxBmDstn7gSYzQESL1AQFLSWkHPOK7Iahc2qm39pR-iaVtWQf0YmvxIY0za7-qq1Z3wtVR2Epga3_DajJwZjZfzCo3vsExLwNS8d9M4tWUEIiJdxSI4quaN8mZ4UvhJf6Nxy4ULURsAkWdYO_NuvIVSNovm31H_oNFHWy9fn2FGWDDRwL5_008Y4_FT0&t=4d25b666.axd
-                    " type="text/javascript "></script>
-            <div class="content-wrapper ">
             </div>
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-lg-10 col-lg-offset-1 ">
+            <div class="carousel-item">
+                <img class="d-block w-100 hero-image__bg" src="images/main-imgs/slide-3.png" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="wow animate__animated animate__bounceInDown">
+                        <div class="kicker kicker--box">Faucet Collection</div>
+                        <div>A faucet </br> for your interior </div>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 hero-image__bg" src="images/main-imgs/slide-4.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="wow animate__animated animate__bounceInDown">
+                        <div class="kicker kicker--box">Faucet Collection</div>
+                        <div>A faucet </br> for your interior </div>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 hero-image__bg" src="images/main-imgs/slide-1.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="wow animate__animated animate__bounceInDown">
+                        <div class="kicker kicker--box">Faucet Collection</div>
+                        <div>A faucet </br> for your interior </div>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 hero-image__bg" src="images/main-imgs/slide-2.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="wow animate__animated animate__bounceInDown">
+                        <div class="kicker kicker--box">Faucet Collection</div>
+                        <div>A faucet </br> for your interior </div>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <!-- <span class="sr-only">Previous</span> -->
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <!-- <span class="sr-only">Next</span> -->
+        </a>
+    </div>
+    <!-- <div class="hero-image__container">
+        <div class="hero-image__inner">
+            <div class="hero-image__content">
+                <h1 class="hero-image__title wow animate__animated animate__bounceInDown">
+                    <div class="kicker kicker--box">Faucet Collection</div>
+                    <div class="hero-image__title-text">A faucet </br> for your interior </div>
+                </h1>
+                <div class="hero-image__desc text-gray-light"></div>
 
-
-
-
-
-                        <div class="bg-teal ">
-                            <div>
-                                <div class="full-width ">
-                                    <div class="hero- hero-image--centered heroimage--normal hero-mage-- step " data-scroll-enter=''>
-
-
-
-                                        <div id="carouselExampleIndicators " class="carousel slide " data-ride="carousel " data-interval="2500 ">
-                                            <ol class="carousel-indicators ">
-                                                <li data-target="#carouselExampleIndicators " data-slide-to="0 " class="active "></li>
-                                                <li data-target="#carouselExampleIndicators " data-slide-to="1 "></li>
-                                                <li data-target="#carouselExampleIndicators " data-slide-to="2 "></li>
-                                                <li data-target="#carouselExampleIndicators " data-slide-to="3 "></li>
-                                                <li data-target="#carouselExampleIndicators " data-slide-to="4 "></li>
-                                            </ol>
-                                            <div class="carousel-inner ">
-                                                <div class="carousel-item active ">
-                                                    <img class="d-block w-100 hero-image__bg " src="images/main-imgs/slide-5.png " alt="First slide ">
-                                                </div>
-                                                <div class="carousel-item ">
-                                                    <img class="d-block w-100 hero-image__bg " src="images/main-imgs/slide-3.png " alt="Second slide ">
-                                                </div>
-                                                <div class="carousel-item ">
-                                                    <img class="d-block w-100 hero-image__bg " src="images/main-imgs/slide-4.png " alt="Third slide ">
-                                                </div>
-                                                <div class="carousel-item ">
-                                                    <img class="d-block w-100 hero-image__bg " src="images/main-imgs/slide-1.png " alt="Third slide ">
-                                                </div>
-                                                <div class="carousel-item ">
-                                                    <img class="d-block w-100 hero-image__bg " src="images/main-imgs/slide-2.png " alt="Third slide ">
-                                                </div>
-                                            </div>
-                                            <a class="carousel-control-prev " href="#carouselExampleIndicators " role="button " data-slide="prev ">
-                                                <!-- <span class="carousel-control-prev-icon " aria-hidden="true "></span> -->
-                                                <!-- <span class="sr-only ">Previous</span> -->
-                                            </a>
-                                            <a class="carousel-control-next " href="#carouselExampleIndicators " role="button " data-slide="next ">
-                                                <!-- <span class="carousel-control-next-icon " aria-hidden="true "></span> -->
-                                                <!-- <span class="sr-only ">Next</span> -->
-                                            </a>
-                                        </div>
-
-
-
-
-
-                                        <!-- <img class="hero-image__bg " alt="Neera Collection " data-object-fit="cover " data-rellax-speed="-2 " src="images/main-imgs/1949515619.jpg " sizes="100vw " /> -->
-                                        <div class="hero-image__container ">
-                                            <div class="hero-image__inner ">
-                                                <div class="hero-image__content ">
-                                                    <h1 class="hero-image__title wow animate__animated animate__bounceInDown ">
-                                                        <div class="kicker kicker--box ">Faucet Collection</div>
-                                                        <div class="hero-image__title-text ">A faucet </br> for your interior </div>
-                                                    </h1>
-                                                    <div class="hero-image__desc text-gray-light "></div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <nav class="section-nav section-nav--absolute js-section-nav js-section-nav-absolute section-nav--sticky full-width " data-load-sections=" " data-scroll-spy=" ">
-                            <!-- <div class="section-nav__wrapper ">
-		<div class="section-nav__title ">Explore thoughtfully designed products for the:</div>
-		<ul class="section-nav__list js-section-nav-list "></ul>
-	</div> -->
-
-                        </nav>
-                        <div id="MainContent_C009_Col00 " class="sf_colsIn " data-sf-element="Section Nav " data-placeholder-label="Kitchen " data-section="Kitchen " data-scrollama-index="0 ">
-                            <div id="MainContent_C011_Col00 " class="sf_colsIn full-width section-huge " data-sf-element="Row " data-placeholder-label="Full Width Container ">
-
-
-
-                            </div>
-                            <div id="MainContent_C020_Col00 " class="sf_colsIn full-width section-huge-top " data-sf-element="Row " data-placeholder-label="Full Width Container ">
-                                <div class="container ">
-                                    <div class="row ">
-                                        <div class="col-lg-10 col-lg-offset-1 ">
-                                            <div id="MainContent_C021_Col00 " class="sf_colsIn " data-sf-element="Row " data-placeholder-label="Bootstrap Container ">
-
-
-                                                <div>
-                                                    <div>
-
-                                                        <div class="content-and-media content-and-media--media-right ">
-                                                            <div class="content-and-media__body ">
-                                                                <div class="content-and-media__media content-and-media__media--ie11 ">
-                                                                    <div class="content-and-media__blob ">
-
-
-                                                                        <img class="content-and-media__image wow animate__animated animate__backInRight " alt="Integrated Handle " src="images/main-imgs/Model_Finish.png " sizes="100vw, (min-width: 768px)
-                    45vw " />
-                                                                    </div>
-                                                                </div>
-                                                                <div class="content-and-media__content ">
-                                                                    <h2 class="content-and-media__title content-and-media__title--default wow animate__animated animate__backInLeft ">
-                                                                        <div class="content-and-media__title-text ">Many Models. <span class="no-wrap ">Many Finishes</span></div>
-                                                                    </h2>
-                                                                    <p>
-                                                                        <p class="wow animate__animated animate__backInUp ">So that all you see is beauty, and all you feel is quality.</p>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class='sfContentBlock'>
-                            <hr class="hr ">
-
-                        </div>
-                        <div id="MainContent_C010_Col00 " class="sf_colsIn " data-sf-element="Section Nav " data-placeholder-label="Bathroom " data-section="Bathroom " data-scrollama-index="1 ">
-                            <div id="MainContent_C016_Col00 " class="sf_colsIn full-width " data-sf-element="Row " data-placeholder-label="Full Width Container ">
-
-
-
-                            </div>
-                            <div id="MainContent_C024_Col00 " class="sf_colsIn full-width " data-sf-element="Row " data-placeholder-label="Full Width Container ">
-
-
-                                <div>
-
-                                    <ul class="feature-list full-width ">
-
-                                        <li class="feature-list__item ">
-                                            <div>
-                                                <div class="feature feature--bottom-alignment ">
-                                                    <a href="# " class="feature__link bg-gray-light " title=" ">
-                                                        <img alt="Experience the Modern " class="feature__bg " data-object-fit="cover " src="images/main-imgs/2105265847.jpg " sizes="100vw, (min-width: 768px) 66vw " />
-                                                        <!-- <div class="feature__kicker ">Bacci Collection</div> -->
-                                                        <div class="feature__heading ">Experience the Modern</div>
-                                                        <div class="feature__desc "></div>
-
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="feature-list__item ">
-                                            <div>
-                                                <div class="feature feature--bottom-alignment ">
-                                                    <a href="# " class="feature__link bg-gray-light " title=" ">
-                                                        <img alt="Rhen Collection " class="feature__bg " data-object-fit="cover " src="images/main-imgs/2093605336.jpg " sizes="100vw, (min-width: 768px) 66vw " />
-                                                        <!-- <div class="feature__kicker ">Rhen Collection</div> -->
-                                                        <div class="feature__heading ">Beauty in Grace of Movement</div>
-                                                        <div class="feature__desc "></div>
-
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
-
-                                <div>
-                                    <div>
-                                        <div class="hero-feature hero-feature--left hero-feature--tall step " data-scroll-enter=''>
-                                            <img class="hero-feature__bg " data-object-fit="cover " data-object-position="center center " alt="Spa appeal for your shower encounter " src="images/main-imgs/Cedar_Collection.png " />
-                                            <div class="hero-feature__container ">
-                                                <div class="hero-feature__body hero-feature__body--center ">
-                                                    <h2 class="hero-feature__title wow animate__animated animate__backInRight ">
-                                                        <div class="kicker kicker--box ">Stunning Faucets Collections</div>
-                                                        <div class="hero-feature__title-text ">Appealing Faucets for your shower encounter</div>
-                                                    </h2>
-                                                    <!-- <div class="hero-feature__description "><a class="btn btn-primary btn-sm " href="bathroom/category/showerheads-hand-held-showers.html ">Explore Faucets Collections</a></div> -->
-                                                    <div class="hero-feature__extended-content "></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-
-
-                        </div>
-
+            </div>
+        </div>
+    </div> -->
+    <div class="parallax2">
+        <!-- <h1 style="color: white; text-align: center; padding-top:25% ;">Gallary</h1> -->
+    </div>
+    <div>
+        <div>
+            <div class="hero-feature hero-feature--left hero-feature--tall  step" data-scroll-enter=''>
+                <img class="hero-feature__bg" data-object-fit="cover" data-object-position="center center" alt="Spa appeal for your shower encounter" src="images/main-imgs/Cedar_Collection.png" />
+                <div class="hero-feature__container">
+                    <div class="hero-feature__body hero-feature__body--center">
+                        <h2 class="hero-feature__title wow animate__animated animate__backInRight">
+                            <div class="kicker kicker--box">Stunning Faucets Collections</div>
+                            <div class="hero-feature__title-text">Appealing Faucets for your shower encounter</div>
+                        </h2>
+                        <!-- <div class="hero-feature__description"><a class="btn btn-primary btn-sm" href="bathroom/category/showerheads-hand-held-showers.html">Explore Faucets Collections</a></div> -->
+                        <div class="hero-feature__extended-content"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="content-wrapper ">
 
 
+    </div>
+    <div class="parallax3">
+
+    </div>
+    <div class="container">
+        <h1 style="text-align: center;">Gallery</h1>
+        <div class="row">
+            <div class="  col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="gallaries wow animate__animated animate__bounceInLeft" src="images/Gallery/1.jpeg" alt="">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="gallaries wow animate__animated animate__bounceInDown" src="images/Gallery/2.jpeg" alt="">
+            </div>
+            <div class="  col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="gallaries wow animate__animated animate__bounceInUp" src="images/Gallery/3.jpeg" alt="">
+            </div>
+            <div class="  col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="gallaries wow animate__animated animate__bounceInRight" src="images/Gallery/4.jpeg" alt="">
+            </div>
         </div>
+        <br>
+        <div class="row">
+            <div class="  col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="gallaries wow animate__animated animate__bounceInLeft" src="images/Gallery/7.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="gallaries wow animate__animated animate__bounceInUp" src="images/Gallery/5.jpeg" alt="">
+            </div>
+            <div class="  col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="gallaries wow animate__animated animate__bounceInDown" src="images/Gallery/6.jpeg" alt="">
+            </div>
+            <div class="  col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="gallaries wow animate__animated animate__bounceInRight" src="images/Gallery/8.png" alt="">
+            </div>
         </div>
+        <br>
+    </div>
+    <div class="parallax4">
 
-        <footer class="site-footer ">
+    </div>
+    <footer class="site-footer ">
 
-            <div class="site-footer__signup-form ">
-                <div class="container ">
-                    <div class="text-center margin-top-massive ">
-                        <!-- <div class="kicker "> Our Clients</div> -->
-                        <h2 class="text-pfont-bold section-lead ">Our Clients</h2>
-                    </div>
-                    <br><br>
+        <div class="site-footer__signup-form ">
+            <div class="container ">
+                <div class="text-center margin-top-massive ">
+                    <!-- <div class="kicker "> Our Clients</div> -->
+                    <h2 class="text-pfont-bold section-lead ">Our Clients</h2>
+                </div>
+                <br><br>
 
 
 
-                    <!--Our Clients Slider-->
-                    <!-- <div id="carouselExampleIndicators " class="carousel slide " data-ride="carousel " data-interval="2500 ">
+                <!--Our Clients Slider-->
+                <!-- <div id="carouselExampleIndicators " class="carousel slide " data-ride="carousel " data-interval="2500 ">
                         <ol class="carousel-indicators ">
                             <li data-target="#carouselExampleIndicators " data-slide-to="0 " class="active "></li>
                             <li data-target="#carouselExampleIndicators " data-slide-to="1 "></li>
@@ -547,16 +339,16 @@
                     </div> -->
 
 
-                    <marquee Scrollamount=15>
-                        <img src="images/clients/client-1.png " alt="client-logo " />
-                        <img src="images/clients/client-2.png " alt="client-logo " />
-                        <img src="images/clients/client-3.png " alt="client-logo " />
-                        <img src="images/clients/client-4.png " alt="client-logo " />
-                        <img src="images/clients/client-5.png " alt="client-logo " />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img src="images/clients/client-7.png " alt="client-logo " />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img src="images/clients/client-6.png " alt="client-logo ">
-                    </marquee>
-                    <!-- <div class="row flex-sm-up align-items-center ">
+                <marquee Scrollamount=15>
+                    <img src="images/clients/client-1.png " alt="client-logo " />
+                    <img src="images/clients/client-2.png " alt="client-logo " />
+                    <img src="images/clients/client-3.png " alt="client-logo " />
+                    <img src="images/clients/client-4.png " alt="client-logo " />
+                    <img src="images/clients/client-5.png " alt="client-logo " />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/clients/client-7.png " alt="client-logo " />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/clients/client-6.png " alt="client-logo ">
+                </marquee>
+                <!-- <div class="row flex-sm-up align-items-center ">
                         <div class="col-sm-4 ">
 
                             <img class="stack__img " src="images/clients/client-1.png " alt="Contact Us " />
@@ -583,20 +375,20 @@
                         </div>
 
                     </div> -->
-                </div>
-            </div><br><br>
+            </div>
+        </div><br><br>
 
-            <script id="email-signup-translations " type="application/json ">
-                {
-                    "FormValidationErrors.FirstNameRequired ": "First Name cannot be blank. ",
-                    "FormValidationErrors.LastNameRequired ": "Last Name cannot be blank. ",
-                    "FormValidationErrors.EmailInvalid ": "Please enter a valid email address. ",
-                    "FormValidationErrors.PrivacyPolicyRequired ": "Please agree to the Privacy Policy. "
-                }
-            </script>
+        <script id="email-signup-translations " type="application/json ">
+            {
+                "FormValidationErrors.FirstNameRequired ": "First Name cannot be blank. ",
+                "FormValidationErrors.LastNameRequired ": "Last Name cannot be blank. ",
+                "FormValidationErrors.EmailInvalid ": "Please enter a valid email address. ",
+                "FormValidationErrors.PrivacyPolicyRequired ": "Please agree to the Privacy Policy. "
+            }
+        </script>
+        <div>
             <div>
-                <div>
-                    <!--
+                <!--
 <footer class="site-footer ">
                                         <div class="site-footer__signup-form promo-card newsletter-off ">
                                         <div class="container ">
@@ -630,87 +422,88 @@
                                     style>
                                 -->
 
+            </div>
+        </div>
+
+        <div class="mastfoot " data-sf-element="Row ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="site-footer__logo">
+                            <img src="images/main-imgs/logo.jpg" alt="Pfister">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 style="color: white;">Contact Details</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 style="color: white;">Locate Us</h3>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="index.html">
+                            <h6 style="color: white;">Home</h6>
+                        </a>
+                        <a href="about-us.html">
+                            <h6 style="color: white;">About Us</h6>
+                        </a>
+                        <a href="contact-us.html">
+                            <h6 style="color: white;">Contact Us</h6>
+                        </a>
+                        <a href="our-products.html">
+                            <h6 style="color: white;"> Our Products</h6>
+                        </a>
+                        <a href="catalogue.html">
+                            <h6 style="color: white;">Catalogue</h6>
+                        </a>
+                        <h3 style="color: white;">Follow Us </h3>
+                        <ul class="list-inline footer-subnav__social">
+                            <li><a class=" nav-item nav-link " href="https://www.facebook.com/pages/category/Producer/pneutech-faucets-accessories-934170140304859/" target="_blank "><em class="icon-facebook " style="color: white;"></em><span class="sr-only ">Facebook</span></a></li>
+                            <li><a class="nav-item nav-link " href="https://twitter.com/pneutech52" target="_blank "><em class="icon-twitter " style="color: white;"></em><span class="sr-only ">Twitter</span></a></li>
+                            <li><a class="nav-item nav-link " href="https://www.instagram.com/pneutech_uo/" target="_blank "><em class="icon-instagram " style="color: white;"></em><span class="sr-only ">Instagram</span></a></li>
+                        </ul>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4">
+
+
+                        <p style="font-size: 0.85em;">Shed No. 4654, Phase 3, Dared,<br> Jamnagar-361004, Gujarat (India).</p>
+                        <!-- <p>Shed No. 4654, Phase 3, Dared,<br> Jamnagar-361004, Gujarat (India).</p> -->
+                        <h6 style="color: white;"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;+91-0288-2730062</h6>
+                        <h6 style="color: white;"><i class="fa fa-mobile" aria-hidden="true"></i> &nbsp;+91-97235 88952</h6>
+                        <h6 style="color: white;"><i class="fa fa-whatsapp" aria-hidden="true"></i> &nbsp;+91-99045 87729</h6>
+                        <h6 style="color: white;"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; info@uniglobeoverseas.com</h6>
+                        <h6 style="color: white;"><i class="fa fa-globe" aria-hidden="true"></i> &nbsp; www.uniglobeoverseas.com</h6>
+
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.53124862225846!2d70.05185874516128!3d22.410199968484324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395714b50b448519%3A0xa267edbe5f7aaf57!2sUniglobe%20Overseas!5e0!3m2!1sen!2sin!4v1604650098038!5m2!1sen!2sin"
+                            width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="mastfoot " data-sf-element="Row ">
+        <div>
+            <div>
                 <div class="container ">
                     <div class="row ">
-                        <div class="col-sm-4 col-xs-6 ">
-                            <div class="site-footer__logo ">
-                                <img src="images/main-imgs/logo.jpg " alt="Pfister ">
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6 ">
-                            <h3 style="color: white; ">Contact Details</h3>
-                        </div>
-                        <div class="col-sm-4 col-xs-6 ">
-                            <h3 style="color: white; ">Locate Us</h3>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row ">
-                        <div class="col-sm-4 col-xs-6 ">
-                            <a href="index.html ">
-                                <h6>Home</h6>
-                            </a>
-                            <a href="about-us.html ">
-                                <h6>About Us</h6>
-                            </a>
-                            <a href="contact-us.html ">
-                                <h6>Contact Us</h6>
-                            </a>
-                            <a href="our-products.html ">
-                                <h6> Our Products</h6>
-                            </a>
-                            <a href="catalogue.html ">
-                                <h6>Catalogue</h6>
-                            </a>
-                            <h3 style="color: white; ">Follow Us </h3>
-                            <ul class="list-inline footer-subnav__social ">
-                                <li><a class="link-reversed-subtle " href="# " target="_blank "><em class="icon-facebook "></em><span class="sr-only ">Facebook</span></a></li>
-                                <li><a class="link-reversed-subtle " href="# " target="_blank "><em class="icon-twitter "></em><span class="sr-only ">Twitter</span></a></li>
-                                <li><a class="link-reversed-subtle " href="# " target="_blank "><em class="icon-instagram "></em><span class="sr-only ">Instagram</span></a>
-                                </li>
-                            </ul>
-                        </div>
+                        <div class="col-xs-12 ">
+                            <hr class="hr " />
 
-                        <div class="col-sm-4 col-xs-6 ">
-
-
-                            <p style="font-size: 0.85em; ">Shed No. 4654, Phase 3, Dared,<br> Jamnagar-361004, Gujarat (India).</p>
-                            <!-- <p>Shed No. 4654, Phase 3, Dared,<br> Jamnagar-361004, Gujarat (India).</p> -->
-                            <h6><i class="fa fa-phone " aria-hidden="true "></i> &nbsp;+91 - 0288-2730062</h6>
-                            <h6><i class="fa fa-mobile " aria-hidden="true "></i> &nbsp;+91-97235 88952</h6>
-                            <h6><i class="fa fa-whatsapp " aria-hidden="true "></i> &nbsp;+91-99045 87729</h6>
-                            <h6><i class="fa fa-envelope " aria-hidden="true "></i> &nbsp; info@uniglobeoverseas.com</h6>
-                            <h6><i class="fa fa-globe " aria-hidden="true "></i> &nbsp; www.uniglobeoverseas.com</h6>
-
-                            </a>
-                        </div>
-
-                        <div class="col-sm-4 ">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.53124862225846!2d70.05185874516128!3d22.410199968484324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395714b50b448519%3A0xa267edbe5f7aaf57!2sUniglobe%20Overseas!5e0!3m2!1sen!2sin!4v1604650098038!5m2!1sen!2sin "
-                                width="300 " height="200 " frameborder="0 " style="border:0; " allowfullscreen=" " aria-hidden="false " tabindex="0 "></iframe>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div>
-                <div>
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 ">
-                                <hr class="hr " />
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
+    </footer>
     </div>
     <div class="back-to-top ">
         <a href="index.html# " class="js-back-to-top back-to-top__circle ">

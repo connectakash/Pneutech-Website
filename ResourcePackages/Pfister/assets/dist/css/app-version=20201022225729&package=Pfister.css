@@ -5926,19 +5926,19 @@ a {
 
 @media screen and (max-width: 767.9px) {
     .kicker {
-        font-size: 14.4px
+        font-size: 9.4px
     }
 }
 
 @media screen and (min-width: 768px) {
     .kicker {
-        font-size: 15.2px
+        font-size: 12.2px
     }
 }
 
 @media screen and (min-width: 992px) {
     .kicker {
-        font-size: 16px
+        font-size: 14px
     }
 }
 
@@ -15716,25 +15716,25 @@ html:not(.enable-cursor) .bubble-tooltip__trigger:focus {
 
 @media screen and (max-width: 767.9px) {
     .hero-image__title-text {
-        font-size: 39.6px
+        font-size: 20.6px
     }
 }
 
 @media screen and (min-width: 768px) {
     .hero-image__title-text {
-        font-size: 52.8px
+        font-size: 30.8px
     }
 }
 
 @media screen and (min-width: 992px) {
     .hero-image__title-text {
-        font-size: 59.4px
+        font-size: 35.4px
     }
 }
 
 @media screen and (min-width: 1200px) {
     .hero-image__title-text {
-        font-size: 66px
+        font-size: 50px
     }
 }
 
